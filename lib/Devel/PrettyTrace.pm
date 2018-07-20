@@ -101,7 +101,7 @@ sub format_call{
 }
 
 sub format_args{
-    my $result = p(@DB::args, %Opts);
+    my $result = np(@DB::args, %Opts);
     
     #result is always non-empty array, so transform [\n a\n b\n] => \n\t\t a \n\t\t b \n\t
     $result =~ s/^.*?\n/\n/;
