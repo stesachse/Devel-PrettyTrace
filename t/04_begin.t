@@ -9,16 +9,16 @@ sub z{
 	$f = bt;
 }
 
-eval 'use Foo';
+eval 'use Foo;';
 $f =~ s/eval \d+/eval/g;
 
 if ($] >= 5.014000){
 	is($f, '  main::z() called at t/inc/Foo.pm line 4
   Foo::import(
     [0] "Foo"
-  ) called at (eval) line 2
-  main::BEGIN() called at (eval) line 2
-  eval {...} called at (eval) line 2
+  ) called at (eval) line 1
+  main::BEGIN() called at (eval) line 1
+  eval {...} called at (eval) line 1
   eval \'use Foo;\' called at t/04_begin.t line 12
 ');
 }else{
