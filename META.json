@@ -1,0 +1,70 @@
+{
+   "abstract" : "prints stack traces with arguments expanded into readable format",
+   "author" : [
+      "Sergey Aleynikov <sergey.aleynikov@gmail.com>"
+   ],
+   "dynamic_config" : "0",
+   "generated_by" : "Module::Install version 1.19, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "bsd"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Devel-PrettyTrace",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "t"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.59"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "CPAN::Meta" : "0",
+            "ExtUtils::MakeMaker" : "6.59",
+            "Module::Install::CPANfile" : "0",
+            "inc::Module::Install" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "CPAN::Meta::Check" : "0",
+            "Module::Install::CPANfile" : "0",
+            "Module::Install::ReadmeFromPod" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Data::Printer" : "0.19",
+            "List::MoreUtils" : "0",
+            "perl" : "v5.6.0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Devel::PrettyTrace" : {
+         "file" : "lib/Devel/PrettyTrace.pm",
+         "version" : "0.04"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://opensource.org/licenses/bsd-license.php"
+      ]
+   },
+   "version" : "0.04",
+   "x_serialization_backend" : "JSON::PP version 2.97001"
+}

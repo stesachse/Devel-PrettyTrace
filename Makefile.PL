@@ -9,12 +9,9 @@ version_from 'lib/Devel/PrettyTrace.pm';
 author 'Sergey Aleynikov <sergey.aleynikov@gmail.com>';
 license 'bsd';
 
-test_requires 'Test::More';
-requires 'Data::Printer' => '0.19';
-requires 'Exporter';
-requires 'parent';
-requires 'List::MoreUtils';
+readme_from('lib/Devel/PrettyTrace.pod');
 
-system 'pod2text lib/Devel/PrettyTrace.pod > README';
-
+auto_provides;
+cpanfile;
 WriteAll;
+
