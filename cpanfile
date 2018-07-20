@@ -5,6 +5,7 @@ requires 'List::MoreUtils';
 on configure => sub {
     requires 'inc::Module::Install';
     requires 'Module::Install::CPANfile';
+    requires 'Module::Install::ReadmeFromPod';
 };
 
 on test => sub {

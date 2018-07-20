@@ -9,6 +9,7 @@ configure_requires:
   CPAN::Meta: '0'
   ExtUtils::MakeMaker: '6.59'
   Module::Install::CPANfile: '0'
+  Module::Install::ReadmeFromPod: '0'
   inc::Module::Install: '0'
 dynamic_config: '0'
 generated_by: 'Module::Install version 1.19, CPAN::Meta::Converter version 2.150010'

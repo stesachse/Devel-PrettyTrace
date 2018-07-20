@@ -30,6 +30,7 @@
             "CPAN::Meta" : "0",
             "ExtUtils::MakeMaker" : "6.59",
             "Module::Install::CPANfile" : "0",
+            "Module::Install::ReadmeFromPod" : "0",
             "inc::Module::Install" : "0"
          }
       },
